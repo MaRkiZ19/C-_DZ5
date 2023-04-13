@@ -29,17 +29,23 @@ int Num (string arg)
 
 void MinMax(int [] numbers, int Length)
 {
-    int max = 0;
-    int min = numbers[0];
+    int MaxNum = 0;
+    int MimNum = numbers[0];
     for (int i = 0; i < Length; i++)
     {
-        if (numbers[i] > max) max = numbers[i];
-        else if (numbers[i] < min) min = numbers[i];
+        if (numbers[i] > MaxNum) MaxNum = numbers[i];
+        else if (numbers[i] < MimNum) MimNum = numbers[i];
     }
+    System.Console.WriteLine(string.Join(", ", MimNum, MaxNum));
 }
 
-int Difference();
-//необходимо вычислить разницу. void MinMax определяет значение минимального и максимального.
+/*int Difference(int MimNum, int MaxNum, int result);
+{
+    int result = 0;
+    result = MaxNum - MimNum;
+    return result;
+}*/
+
 
 
 int Length = Num("длину массива");
@@ -48,4 +54,5 @@ int max = Num("максимальное число");
 int [] numbers = CreateArray(Length, min, max);
 PrintArray(numbers);
 MinMax(numbers, Length);
-System.Console.WriteLine(Difference());
+/*Difference( MinMax(numbers, Length));
+System.Console.WriteLine(result);*/
