@@ -56,3 +56,7 @@ PrintArray(numbers);
 MinMax(numbers, Length);
 /*Difference( MinMax(numbers, Length));
 System.Console.WriteLine(result);*/
+
+
+//Я не понимаю.
+//Программа делает массив, определяет минимальное и максмальное, но как их вытащить, что бы использовать в методе определения разности, я не понимаю.
